@@ -1,6 +1,8 @@
-# Net::Ftp::PortCommand
+# Net::FTP::PortCommand
 
-TODO: Write a gem description
+This gem enables Net::FTP to send FTP `PORT` command.
+
+If your FTP client have to use active mode and over NAT, this gem may be helpful.
 
 ## Installation
 
@@ -20,7 +22,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'net/ftp'
+require 'net/ftp/port_command'
+
+ftp = Net::FTP.new("exmaple.com", "ussername", "password")
+ftp.port("203.0.113.0", 10020) # Set listening address and port of Data connection.
+ftp.list # => ["foo.txt", "bar.txt"]
+```
+
+After address or port was set once, it will be effective until explicitly removed.
+
+```ruby
+ftp.port(nil, nil) # default behavior of Net::FTP
+```
 
 ## Contributing
 
