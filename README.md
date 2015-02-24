@@ -1,5 +1,7 @@
 # Net::FTP::PortCommand
 
+[![Gem Version](https://badge.fury.io/rb/net-ftp-port_command.svg)](http://badge.fury.io/rb/net-ftp-port_command)
+
 This gem enables Net::FTP to send FTP `PORT` command.
 
 If your FTP client have to use active mode and over NAT, this gem may be helpful.
