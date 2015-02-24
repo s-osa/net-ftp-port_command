@@ -5,7 +5,7 @@ require 'net/ftp/port_command/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "net-ftp-port_command"
-  spec.version       = Net::Ftp::PortCommand::VERSION
+  spec.version       = Net::FTP::PortCommand::VERSION
   spec.authors       = ["OSA Shunsuke"]
   spec.email         = ["hhelibebcnofnenamg@gmail.com"]
   spec.summary       = %q{Enable Net::FTP to send PORT command.}
