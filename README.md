@@ -1,6 +1,7 @@
 # Net::FTP::PortCommand
 
 [![Gem Version](https://badge.fury.io/rb/net-ftp-port_command.svg)](http://badge.fury.io/rb/net-ftp-port_command)
+[![Build Status](https://travis-ci.org/s-osa/net-ftp-port_command.svg?branch=master)](https://travis-ci.org/s-osa/net-ftp-port_command)
 
 This gem enables Net::FTP to send FTP `PORT` command.
 
