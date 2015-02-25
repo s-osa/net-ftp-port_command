@@ -1,8 +1,7 @@
 describe Net::FTP do
   describe "methods" do
     subject{ described_class.new }
-    its(:public_methods){ is_expected.to include(:port) }
-    its(:public_methods){ is_expected.not_to include(:makeport) }
-    its(:private_methods){ is_expected.to include(:makeport) }
+    it{ is_expected.to respond_to(:port) }
+    it{ is_expected.not_to respond_to(:makeport) }
   end
 end
