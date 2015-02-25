@@ -3,4 +3,4 @@ rvm:
   - 2.2.0
   - 2.1.0
   - 2.0.0
-script: bundle exec rspec
+script: bundle exec rspec --require ./spec/spec_helper.rb
